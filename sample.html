@@ -1,42 +1,66 @@
+<!--Describe the type of markup document-->
 <!DOCTYPE html>
+
+<!--Start HTML Docs with an html tag-->
 <html lang="en">
+
+<!--The head is invisible and holds information about the document-->
 <head>
+
+  <!--These meta tell the browser how to interpret characters-->
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--and pixel density for mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!--Tell google what it is seeing-->
   <meta name="description" content="">
   <meta name="author" content="">
 
+  <!--What to call this page in the window header or tab-->
   <title></title>
 
+  <!--Link in stylesheets-->
+  <!--This one is the bootstrap css. I chose to fetch it from the bootstrap CDN-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--Link our own CSS (notice not SCSS)-->
+  <link rel="stylesheet" href="styles/main.css">
 
 </head>
 
+<!--Start the visible part of the document-->
 <body>
 
+  <!--The container is the outer body of the bootstrap content.-->
+  <!--It adjusts its size bast on the width of the device viewing it and has a padding on left and right-->
   <div class="container">
 
+    <!--Rows have a negative padding on left and right to counteract-->
+    <!--the container or column padding and prevent compounding paddings-->
     <div class="row">
-      <div class="col-md-6 col-sm-12">50% when big, 100% when small</div>
-      <div class="col-md-6 col-sm-12">50% when big, 100% when small</div>
+      <!--These columns will be either half or a full row depending on how wid the screen is-->
+      <!--since .col-xs and .col-lg aren't listed, they are assumed .col-xs-12 and .col-lg-6-->
+      <div class="col-sm-12 col-md-6">50% when big, 100% when small</div>
+      <div class="col-sm-12 col-md-6">50% when big, 100% when small</div>
     </div>
 
     <div class="row">
+      <!--since only .col-xs is listed sm, md, and lg are assumed the same value, 12 columns-->
       <div class="col-xs-12">
-
+        100% all the time
       </div>
     </div>
 
+    <!--A comment describing what this </div> closes is often added-->
+    <!--to closing tags expected to be far from their opening tag-->
   </div> <!-- /container -->
 
 
-
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
+  <!--Javascript Files-->
+  <!--Include jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!--Include Bootstrap's JS file AFTER jQuery because it depends on jQuery-->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--Include out JS File.-->
+  <script src="scripts/main.js"></script>
 </body>
 </html>

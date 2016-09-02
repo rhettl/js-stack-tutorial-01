@@ -5,7 +5,8 @@
   "scripts": {
     "start": "echo \"Error: no start specified\" && exit 1",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+    "watch": "gulp watch"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
   },
   "dependencies": {
     "gulp-gitignore": "^0.1.0",
+    "gulp-rimraf": "^0.2.0",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0"
   }

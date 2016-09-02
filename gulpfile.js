@@ -4,6 +4,7 @@ const ghPages          = require('gulp-gh-pages');
 const sass             = require('gulp-sass');
 const sourcemaps       = require('gulp-sourcemaps');
 const gitignore        = require('gulp-gitignore');
+const rm               = require('gulp-rimraf');
 
 gulp.task('gh-pages', function () {
   return gulp.src('./**/**')
@@ -25,15 +26,16 @@ gulp.task('sass', ['sass:clean'], function () {
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('styles/'));
 });
-gulp.task('sass:watch', function () {
-  gulp.watch(['styles/**/*.scss'], ['sass', 'fonts', 'vendor-images']);
+gulp.task('sass:watch', ['sass'], function () {
+  gulp.watch(['styles/**/*.scss'], ['sass']);
 });
 gulp.task('sass:clean', function () {
-  return gulp.src('./styles/**/*')
+  return gulp.src('./styles/**/*.css')
     .pipe(rm({force: true}))
     ;
 });
 
 
+gulp.task('watch', ['sass:watch']);
 gulp.task('deploy', ['gh-pages']);
 gulp.task('default', ['deploy']);

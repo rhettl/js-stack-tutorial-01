@@ -45,6 +45,8 @@ this directory I included the following file structure:
   - README.md         // This file
   - sample.html       // A base HTML file with dependancies pre-linked.
 ```
+*Note, `.placeholder` files let git keep an empty folder. They are 
+intended to be empty and you may ignore them.
 
 
 ## Before you Start
