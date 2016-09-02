@@ -413,7 +413,7 @@ appropriate `fa` classes for icon content, size, and modifiers
 (like spin or color inversion)
 
 For example: if I wanted the [heart symbol][9]:
-```
+```html
 <i class="fa fa-heart"></i>
 ```
 For a large heart I could add `fa-lg`, `fa-2x`, `fa-3x`, etc.
