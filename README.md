@@ -3,7 +3,7 @@
 This is the first project in a line of projects intended to teach a full 
 JavaScript Stack.
 
-In this project you will be creating a Static Personal Website with 
+In this project, you will be creating a Static Personal Website with 
 homepage, some static pages, and blog (including feed view and article 
 view) totaling to 4 page types. 
 
@@ -15,6 +15,9 @@ With this project, I hope you learn/bolster:
 - CSS (with option to learn SASS)
 - Font Awesome (icon framework \[optional])
 
+
+
+
 ## Your Website
 
 Your website should have 4 types of pages. By types, I mean content and 
@@ -25,13 +28,16 @@ body structures. For this project, those types will be:
 3. Blog Main
 4. Blog Article
 
+
+
 ## Structure
 
 Your files should be structured to help organize where things go. In 
 this directory I included the following file structure:
   
 ```
-> Root/
+> Root/             // This is the root of the site,
+  |                 // For this project it is a good place to put your HTML.
   > images/           // for all images
   > scripts/          // for your javascript files
     - main.js           // Your main javascript file
@@ -49,6 +55,7 @@ this directory I included the following file structure:
 intended to be empty and you may ignore them.
 
 
+
 ## Before you Start
 
 It usually isn't a good idea to start a site cold. You should start with 
@@ -61,12 +68,17 @@ For your design, remember that whitespace is good, so don't worry too
 if you feel you have little content. Modern web pages are best spread 
 out. 
 
+
+
 ## Mobile first Development
 
 Normally, I would recommend design the mobile version of your site then 
 design the desktop version, but for this project we will ignore that to 
 make life easier.
-  
+
+
+
+
 ## Making the First Page
 
 For the first page, you won't have a header, footer, or navbar yet. 
@@ -75,6 +87,58 @@ you prefer to start on something other than the homepage). The new page
 should be on the project root directory. After you complete the first 
 page, you can copy that to create the next -- that way it keeps your 
 header, footer, and navbar.
+
+
+
+
+## Project Pages
+
+The pages you will make are relatively easy to structure, but if you are 
+like me, it may be hard to decide how you **want** things to look.
+
+I recommend the content for these pages be mostly real. You obviously 
+won't have a lot of blog posts, but try to limit the usage of 
+`lorem ipsum` text and placeholders. The more real content you have, the 
+happier you will be with the final outcome and the more you are likely 
+to care about it.
+
+### Homepage
+
+The home page would be a good place the have a picture of you, which you 
+are okay showing the world, something paragraphs about yourself, and a 
+list of ways one may contact you (i.e. twitter, linkedin, etsy, etc).
+
+As important, are the headers and footers. You will want to make them 
+here so you can copy them to the other pages. The more complete they are 
+here, the less double-work you'll need to do later.  
+
+### Static Pages
+
+Make as many of these as you like, I recommend making a skills or 
+projects/portfolio page. If you have multiple hobbies and want to 
+showcase different hobbies, you may consider a different static page per 
+each one.
+
+Most of what is on here is raw content. structure it simply and make it 
+easy for people to read and understand at what they are looking. 
+
+### Blog Article
+
+This page will have one single blog post. Plan to have 0, 1, or maybe a 
+couple images and plenty of content. You will want tags. Especially if 
+you have many hobbies and wish to write about all of them. 
+
+A blog is important for programmers and pretty much anyone who wants to 
+get their name out, because it shows your ideas and neat things you do. 
+It allows you to help teach others or document a learning process. A Blog
+and twitter can be vital to getting your next job.
+  
+### Blog Posts
+
+This page is a list of recent blog posts. Remember to add a list of 
+common tags and pagination. 
+
+
  
  
 ### Anatomy of sample.html
@@ -92,6 +156,9 @@ Stylesheets are linked in the head and the JavaScripts included just
 above the footer `</body>`. This is to facilitate displaying content to 
 the user faster.
 
+
+
+
 ## Short Descriptions of Technologies
 
 ### Bootstrap
@@ -104,7 +171,7 @@ of well named, very modular, relatively easy to use CSS rules. The way
 they are implemented allows the user to nearly forget he/she is using 
 CSS.
 
-####Main Components
+#### Main Components
 
 Paramount of the various rules are the grid system. [Bootstraps Docs][1]
 can give a far superior guide than I will, but here's a jump start:
@@ -165,6 +232,8 @@ experience with the full stack. Of course, if you feel comfortable with
 it, please feel free to try mobile first design.   
 
 
+
+
 ### jQuery
 
 While jQuery is a part of this project, it is mainly as a dependancy of 
@@ -174,11 +243,17 @@ of jQuery.
 In case you don't know, jQuery is a library which helps find and 
 manipulate parts of the webpage using JavaScript.
  
+ 
+ 
+ 
 ### HTML
 
 HTML is how the data is structured. If you don't know a little about 
 HTML, this may not be the right project to start you off. You might try 
 [Code School][3] or [W3Schools][4].
+
+
+
 
 ### CSS
 
@@ -186,6 +261,8 @@ CSS is how the site is made pretty. If you don't know this you may not
 want to start here. Try [Code School][3] or [W3School][5] 
 
 #### SASS
+
+[SASS Website][12]
 
 SASS, Syntactically Awesome StylesSheets, or SCSS, Sassy CSS, is a way 
 to compile CSS. SASS adds variables, functions, nesting, and more to 
@@ -308,26 +385,31 @@ but not overwhelm your learning:
   }
   ```
   To be honest, I don't know even know how to use more than the color 
-  helpers, but the capabilities of these are simply amazing
+  helpers, but the capabilities of these are simply amazing. Here is a 
+  [full list.][13]
 
 #### Compiling SASS
 
-Normally, you would use a compile step to make convert SASS to CSS. I 
-added a watcher and SASS compiler to the [gulpfile](gulpfile.js). All 
-you will need to do is run `npm run watch`, this will look for when you 
-make changes to `*.scss` files and automatically convert them to `*.css` 
-with the same name.
+Normally, you would use a compile step to convert SASS to CSS. I added a 
+watcher and SASS compiler to the [gulpfile](gulpfile.js). All you will 
+need to do is run `npm run watch`, this will look for when you make 
+changes to `*.scss` files and automatically convert them to `*.css` with 
+the same name. I have started this with `/styles/main.scss`.
+
+
+
 
 ### Font Awesome
 
-Really simple, read [docs here][7]. Amazing use of web-fonts to make 
-sizable, stylable, colorable, accessible (aria) icons. They also managed 
-to breath a grand new life into the long, and well, forgotten `<i></i>` 
-tag.
+[Font Awesome Website][7]
+
+Amazing use of web-fonts to make sizable, stylable, colorable, 
+accessible (aria) icons. They also managed to breath a grand new life 
+into the long, and well, forgotten `<i></i>` tag.
 
 Take a look at the [Font Awesome Icons page][8]. There are an amazing 
-number of them. To implement one someone, just put an `<i>` tag down 
-with appropriate `fa` classes for icon content, size, and modifiers 
+number of icons. To implement one, just put an `<i>` tag down with the 
+appropriate `fa` classes for icon content, size, and modifiers 
 (like spin or color inversion)
 
 For example: if I wanted the [heart symbol][9]:
@@ -346,6 +428,52 @@ despite having some icons already present.
 
 
 
+## Deploying to GitHub Pages
+
+GitHub pages is free static hosting provided by GitHub. When properly 
+set up, a report at URL `https://github.com/<user>/<repo>` will spawn a 
+static website at `https://<user>.github.io/<repo>`.
+
+There is a gulp task to deploy to GH Pages, but there are some steps to 
+take before it will work, These steps require [git][10]:
+
+1. Initialize a git repo at the root of this project. If you have a repo 
+there already, you will have a `.git` file (it may be hidden), in which 
+case, move on to step #2. To initialize a repo, use `git init`.
+
+2. Log into [GitHub][11] (create and account if needed) and make a new 
+repo named whatever you like. Keep in mind the naming scheme from 
+earlier, `https://<user>.github.io/<repo>`. So your user name will 
+replace `<user>` and the repo name will replace `<repo>`. 
+
+3. Copy the link to the repo, it should be in the format 
+`https://github.com/<user>/<repo>`. Be sure to make it the HTTPS version,
+**not** the HTTP version of the URL
+
+4. Back at in the project files on your computer, set the URL of remote 
+'origin' to the newly created repo's address. If your repo is 
+`https://github.com/<user>/<repo>` you will use `git remote add origin https://github.com/<user>/<repo>` 
+if you just created the repo and `git remote set-url origin https://github.com/<user>/<repo>` 
+if you cloned the repo initially
+
+5. push to the remote repo and **set the default upstream**. 
+`git push -u origin master` The `-u` is important as it will tell git 
+that this remote location is the default repo for this code. 
+
+
+Now that the repo is setup on GitHub, you are almost ready. Your GitHub 
+Pages will not render if your email address is not confirmed. If the 
+address is **not** confirmed, GitHub will warn you on login. 
+
+`npm run deploy` will collect all the project related files (basically 
+anything I didn't create), commit them to a git branch, and push them to 
+a branch on GitHub intended for use with GH Pages. 
+
+You should now be able to view your project at the 
+`https://<user>.github.io/<repo>` location.
+
+
+
 
 [1]: http://getbootstrap.com/css/#grid
 [2]: http://getbootstrap.com/
@@ -356,3 +484,7 @@ despite having some icons already present.
 [7]: http://fontawesome.io/
 [8]: http://fontawesome.io/icons/
 [9]: http://fontawesome.io/icon/heart/
+[10]: http://git-scm.com
+[11]: http://github.com
+[12]: http://sass-lang.com
+[13]: http://sass-lang.com/documentation/Sass/Script/Functions.html
