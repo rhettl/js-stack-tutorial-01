@@ -318,6 +318,33 @@ you will need to do is run `npm run watch`, this will look for when you
 make changes to `*.scss` files and automatically convert them to `*.css` 
 with the same name.
 
+### Font Awesome
+
+Really simple, read [docs here][7]. Amazing use of web-fonts to make 
+sizable, stylable, colorable, accessible (aria) icons. They also managed 
+to breath a grand new life into the long, and well, forgotten `<i></i>` 
+tag.
+
+Take a look at the [Font Awesome Icons page][8]. There are an amazing 
+number of them. To implement one someone, just put an `<i>` tag down 
+with appropriate `fa` classes for icon content, size, and modifiers 
+(like spin or color inversion)
+
+For example: if I wanted the [heart symbol][9]:
+```
+<i class="fa fa-heart"></i>
+```
+For a large heart I could add `fa-lg`, `fa-2x`, `fa-3x`, etc.
+
+#### Comparison with Bootstrap Glyphicons
+
+There isn't anything wrong with Bootstrap's Glyphicons, but Font Awesome 
+has more icons and are (form me at least) easier to use. So much easier 
+that it is worth importing a whole additional stylesheet and font set 
+despite having some icons already present.  
+
+
+
 
 
 [1]: http://getbootstrap.com/css/#grid
@@ -326,3 +353,6 @@ with the same name.
 [4]: http://www.w3schools.com/html/
 [5]: http://www.w3schools.com/css/
 [6]: http://sass-lang.com/guide
+[7]: http://fontawesome.io/
+[8]: http://fontawesome.io/icons/
+[9]: http://fontawesome.io/icon/heart/
