@@ -474,6 +474,39 @@ You should now be able to view your project at the
 
 
 
+## Text Editors and IDEs
+
+Programmers usually use either an advanced text editor or an Integrated 
+Development Environment (IDE) to write their code. While the difference 
+between the two isn't that important at this stage, it is safe to say 
+that IDEs have more built in features out of the box. Choosing the right 
+Environment to work in can make your life easier in ways you probably 
+don't yet imagine.
+
+Some popular editors and IDEs include:
+
+- [Sublime Text][14] - A very mature text editor which most of the 
+  features of the big IDEs
+- [GitHub Atom][15] - Newer Text editor by GitHub. Very similar to 
+  Sublime, but hasn't been around quite as long, but has a good following 
+  and is a solid product
+- [Webstorm][16] - Fully Featured IDE for pretty much everything in the 
+  HTML/CSS/JS world. This is my personal Choice, but it costs about $60/yr. 
+  Sometimes, you can get the [Early Access Program (EAP)][17] version which is 
+  free, but they every once in a while will take it away when they want 
+  to heavily sell the newest release.
+
+For this project, I recommend something with:
+
+- A terminal build into the editor
+- code highlighting
+- zen coding -- speeds up html and css greatly, aka: [emmet][18] 
+- .editorconfig support
+
+All three of the above include these out of the box or these can be 
+added via plugins.
+
+
 
 [1]: http://getbootstrap.com/css/#grid
 [2]: http://getbootstrap.com/
@@ -488,3 +521,8 @@ You should now be able to view your project at the
 [11]: http://github.com
 [12]: http://sass-lang.com
 [13]: http://sass-lang.com/documentation/Sass/Script/Functions.html
+[14]: https://www.sublimetext.com/
+[15]: https://atom.io/
+[16]: https://www.jetbrains.com/webstorm/
+[17]: https://confluence.jetbrains.com/display/WI/WebStorm+EAP
+[18]: https://en.wikipedia.org/wiki/Emmet_(software)
