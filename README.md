@@ -316,7 +316,7 @@ but not overwhelm your learning:
   
 2. Variables and Math
 
-  ```
+  ```sass
   $base-font: 14px;
   
   body {
@@ -354,7 +354,7 @@ but not overwhelm your learning:
   
 3. Helper Functions 
 
-  ```
+  ```sass
   $red: #d80000;
   $dkbrown: #2b1d0e;
   
