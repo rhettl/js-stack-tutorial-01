@@ -20,7 +20,7 @@ gulp.task('gh-pages', function () {
 });
 
 gulp.task('sass', ['sass:clean'], function () {
-  return gulp.src('styles/*.scss')
+  return gulp.src(['styles/**/*.scss', '!styles/**/_*.scss'])
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(sourcemaps.write('./'))
