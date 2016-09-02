@@ -184,7 +184,7 @@ you shouldn't put one inside another.
 and `00` is colspan. 
 5. ex: 3 Rows with 1, 2, and 4 columns
 
-  ```
+  ```html
   <div class="row">
     <div class="col-xs-12"></div>
   </div>
@@ -204,7 +204,7 @@ and `00` is colspan.
 if you want to nest `.col-xx-00`, wrap them in a `.row`. ex: 1 column 
 containing 2 rows with 2 and 4 columns respectively.
 
-  ```
+  ```html
   <div class="row">
     <div class="col-xs-12">
       <div class="row">
